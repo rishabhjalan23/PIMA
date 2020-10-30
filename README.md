@@ -3,5 +3,8 @@ I have done EDA which includes descriptive statistics.
 Then I have used median values of the respective outcomes to fill the missing values in all the columns. The primary reason behind using the median value is the presence of outliers.
 In first notebook, I have build the logistic regression model by scalling the model using Power Transformer method and tuned the hyper-parameters and finally used bagging classifier to get the best model.
 In second notebook, I have build the KNN model and tuned the hyper-parameter and finally used bagging classifier to get the best model. 
-In third notebook, I have buld the DecisionTree Classifier model and tuned the hyper-parameter and finally used bagging classifier to get the best model.
-Out of all the three models, Decision Tree Classifier gave the best output across the performance metrics and bagging model of KNN was the close second with .90 roc-auc-score. However if the priority is to identify diabetic patient correctly, we should opt for Decision Tree model.
+In third notebook, I have build the DecisionTree Classifier model and tuned the hyper-parameter and finally used bagging classifier to get the best model.
+In fourth notebook, I have build the Support Vector Classifier model and tuned the hyper-parameter and finally used bagging classifier to get the best model.
+In fifth notebook, I have build the RandomForest Classifier model and tuned the hyper-parameter and finally used feature importance to get the most important feature.
+Out of all the three models, RandomForest Classifier gave the best output across the performance metrics and bagging model of KNN was the close second with .90 roc-auc-score. However if the priority is to identify most diabetic patient correctly, Decision Tree model can also be a good option.
+In feature extraction through RandomForest, Insulin was the most important feature in predicting whether the patient is diabetic or not. Intutively also insulin was supposed to be the most important factor as it decide the level of sugar in the body. As per my expectation, glucose should have been the close 2nd, but it wasn't, skinthickness was the 2nd best model.
